@@ -1,1 +1,46 @@
-Coming soon...
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Images</title>
+    <style>
+        body {
+            background-color: #FDFCFB;
+            /* Light cream background */
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+        img {
+            width: 100%;
+            /* makes image responsive */
+            max-width: 600px;
+            /* you can adjust max-width as per your requirement */
+            height: auto;
+            display: block;
+            /* removes bottom margin/whitespace */
+            margin-bottom: 10px;
+            /* spacing between images */
+        }
+
+        @media (min-width: 600px) {
+            img {
+                width: 50%;
+                /* Adjusts width on larger screens */
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <img src="img/cosmonaut_logo_orig.png" alt="we are cosmonaut">
+    <img src="img/cosmonaut_txt.png" alt=">_ cosmonaut">
+    <img src="img/coming_soon_txt.png" alt="Coming soon">
+</body>
+
+</html>
