@@ -4,43 +4,50 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Responsive Images</title>
+    <title>">_ Cosmonaut"</title>
     <style>
+        /* Set the background color for the entire page */
         body {
             background-color: #FDFCFB;
-            /* Light cream background */
             margin: 0;
-            padding: 0;
+            height: 100vh;
             display: flex;
-            flex-direction: column;
-            align-items: flex-start;
+            align-items: center;
+            /* Aligns vertically center */
+            justify-content: center;
+            /* Aligns horizontally center */
         }
 
-        img {
-            width: 100%;
-            /* makes image responsive */
-            max-width: 600px;
-            /* you can adjust max-width as per your requirement */
+        .image-container {
+            display: flex;
+            flex-wrap: wrap;
+            /* Allows images to wrap on small screens */
+            justify-content: center;
+        }
+
+        .image-container img {
+            max-width: 50%;
+            /* Each image can take up to half the width of the viewport */
             height: auto;
-            display: block;
-            /* removes bottom margin/whitespace */
-            margin-bottom: 10px;
-            /* spacing between images */
+            /* Keep the aspect ratio of the images */
+            padding: 5px;
+            /* Optional: Adds some space between the images */
         }
 
-        @media (min-width: 600px) {
-            img {
-                width: 50%;
-                /* Adjusts width on larger screens */
+        /* Responsive Images: If the screen is too small, each image takes full width */
+        @media (max-width: 600px) {
+            .image-container img {
+                max-width: 100%;
             }
         }
     </style>
 </head>
 
 <body>
-    <img src="img/cosmonaut_logo_orig.png" alt="we are cosmonaut">
-    <img src="img/cosmonaut_txt.png" alt=">_ cosmonaut">
-    <img src="img/coming_soon_txt.png" alt="Coming soon">
+    <div class="image-container">
+    
+    <img src="img/cosmonaut_txt_trans.png" alt="Coming soon">
+    <img src="img/Logo_base_trans.png" alt="we are cosmonaut">
 </body>
 
 </html>
