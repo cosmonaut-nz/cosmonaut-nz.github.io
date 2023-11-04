@@ -4,13 +4,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>">_ Cosmonaut"</title>
+    <title>">_ cosmonaut"</title>
     <style>
         /* Set the background color for the entire page */
         body {
             background-color: #FDFCFB;
             margin: 0;
-            height: 100vh;
+            width: 100%;
+            height: 100%;
             display: flex;
             align-items: center;
             /* Aligns vertically center */
@@ -20,22 +21,22 @@
 
         .image-container {
             display: flex;
-            flex-wrap: wrap;
+            flex-wrap: nowrap;
             /* Allows images to wrap on small screens */
             justify-content: center;
+            max-width: 100%;
         }
 
         .image-container img {
-            max-width: 50%;
-            /* Each image can take up to half the width of the viewport */
-            height: auto;
-            /* Keep the aspect ratio of the images */
-            padding: 5px;
-            /* Optional: Adds some space between the images */
+            flex: 1; /* Allow images to grow and shrink as needed */
+            max-width: 45%; /* Each image can take up to 45% of the container width */
+            object-fit: contain; /* Makes the image scale to fit the content box */
+            height: auto; /* Maintain aspect ratio */
+            margin: 0 2.5%; /* Spacing between images */
         }
 
         /* Responsive Images: If the screen is too small, each image takes full width */
-        @media (max-width: 600px) {
+        @media (max-width: 300px) {
             .image-container img {
                 max-width: 100%;
             }
