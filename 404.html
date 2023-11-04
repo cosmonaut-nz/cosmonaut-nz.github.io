@@ -1,10 +1,13 @@
+---
+permalink: /404.html
+---
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>">_ cosmonaut"</title>
+    <title>">_ lost cosmonaut"</title>
     <style>
         /* Set the background color for the entire page */
         body {
@@ -18,6 +21,13 @@
             justify-content: center;
             /* Aligns horizontally center */
         }
+        .home-icon {
+            position: absolute;
+            top: 25px; /* 25px from the top */
+            left: 25px; /* 25px from the left */
+            width: 75px; /* Width of the home icon */
+            height: auto; /* Maintain aspect ratio */
+        }
 
         .image-container {
             display: flex;
@@ -28,11 +38,16 @@
         }
 
         .image-container img {
-            flex: 1; /* Allow images to grow and shrink as needed */
-            max-width: 45%; /* Each image can take up to 45% of the container width */
-            object-fit: contain; /* Makes the image scale to fit the content box */
-            height: auto; /* Maintain aspect ratio */
-            margin: 0 2.5%; /* Spacing between images */
+            flex: 1;
+            /* Allow images to grow and shrink as needed */
+            max-width: 45%;
+            /* Each image can take up to 45% of the container width */
+            object-fit: contain;
+            /* Makes the image scale to fit the content box */
+            height: auto;
+            /* Maintain aspect ratio */
+            margin: 0 2.5%;
+            /* Spacing between images */
         }
 
         /* Responsive Images: If the screen is too small, each image takes full width */
@@ -45,10 +60,13 @@
 </head>
 
 <body>
+    <a href="https://cosmonaut.co.nz">
+        <img class="home-icon" src="img/rocket_home_trans.png" alt="Fly home">
+    </a>
     <div class="image-container">
-    
-    <img src="img/cosmonaut_txt_trans.png" alt="Coming soon">
-    <img src="img/cosmonaut_logo_trans.png" alt="we are cosmonaut">
+        <img src="img/lost_cosmonaut.png" alt="Lost">
+        <img src="img/cosmonaut_logo_trans.png" alt="we are cosmonaut">
+    </div>
 </body>
 
 </html>
