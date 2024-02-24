@@ -1,54 +1,87 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>">_ cosmonaut"</title>
-    <style>
-        /* Set the background color for the entire page */
-        body {
-            background-color: #FDFCFB;
-            margin: 0;
-            width: 100%;
-            height: 100%;
-            display: flex;
-            align-items: center;
-            /* Aligns vertically center */
-            justify-content: center;
-            /* Aligns horizontally center */
-        }
-
-        .image-container {
-            display: flex;
-            flex-wrap: nowrap;
-            /* Allows images to wrap on small screens */
-            justify-content: center;
-            max-width: 100%;
-        }
-
-        .image-container img {
-            flex: 1; /* Allow images to grow and shrink as needed */
-            max-width: 45%; /* Each image can take up to 45% of the container width */
-            object-fit: contain; /* Makes the image scale to fit the content box */
-            height: auto; /* Maintain aspect ratio */
-            margin: 0 2.5%; /* Spacing between images */
-        }
-
-        /* Responsive Images: If the screen is too small, each image takes full width */
-        @media (max-width: 300px) {
-            .image-container img {
-                max-width: 100%;
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>" >_ cosmonaut"</title>
+        <link rel="icon" href="img/favicon/favicon.ico" type="image/x-icon" />
+        <style>
+            body {
+                background-color: #fdfcfb;
+                width: 100%;
+                height: 100%;
+                display: flex;
+                align-items: flex-start;
+                justify-content: flex-start;
+                font-family: monospace;
+                font-size: 30px;
             }
-        }
-    </style>
-</head>
 
-<body>
-    <div class="image-container">
-    
-    <img src="img/cosmonaut_txt_trans.png" alt="Coming soon">
-    <img src="img/cosmonaut_logo_trans.png" alt="we are cosmonaut">
-</body>
+            .flex {
+                display: flex;
+                justify-content: left;
+                flex-direction: column;
+                width: 100%;
+                max-width: 55%;
+            }
 
+            .image-container {
+                display: flex;
+                flex-wrap: nowrap;
+                max-width: 65%;
+            }
+
+            .image-container img {
+                flex: 1;
+                max-width: 35%;
+                object-fit: contain;
+                height: auto;
+            }
+
+            .text {
+                flex-grow: 1;
+                display: flex;
+                margin-left: 50px;
+            }
+
+            footer {
+                text-align: center;
+                font-size: 10px;
+                color: #666;
+                padding: 20px 0;
+                position: fixed;
+                left: 0;
+                bottom: 0;
+                width: 100%;
+                background-color: rgba(255, 255, 255, 0.9);
+                font-family: monospace;
+            }
+
+            /* Responsive Images: If the screen is too small, each image takes full width */
+            @media (max-width: 200px) {
+                .image-container img {
+                    max-width: 100%;
+                }
+
+                footer {
+                    font-size: 8px;
+                }
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="flex">
+            <div class="image-container">
+                <img src="img/cosmonaut_logo_trans.png" alt="we are cosmonaut" />
+            </div>
+            <p class="text">
+                <span> >_ we are cosmonaut</span>
+            </p>
+            <p class="text">
+                <span> >_ we make things simpler</span>
+            </p>
+        </div>
+    </body>
+    <footer>>_ &copy; 2024 cosmonaut limited. all rights reserved.</footer>
 </html>

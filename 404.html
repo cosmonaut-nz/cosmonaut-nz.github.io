@@ -1,73 +1,80 @@
 ---
 permalink: /404.html
 ---
-<!DOCTYPE html>
+
+<!doctype html>
 <html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>">_ lost cosmonaut"</title>
+        <style>
+            body {
+                background-color: #fdfcfb;
+                margin: 0;
+                width: 100%;
+                height: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            .home-icon {
+                position: absolute;
+                top: 2%;
+                left: 2%;
+                width: 6vw;
+                height: auto;
+                z-index: 100;
+            }
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>">_ lost cosmonaut"</title>
-    <style>
-        /* Set the background color for the entire page */
-        body {
-            background-color: #FDFCFB;
-            margin: 0;
-            width: 100%;
-            height: 100%;
-            display: flex;
-            align-items: center;
-            /* Aligns vertically center */
-            justify-content: center;
-            /* Aligns horizontally center */
-        }
-        .home-icon {
-            position: absolute;
-            top: 2%; /* Relative to the viewport */
-            left: 2%; /* Relative to the viewport */
-            width: 6vw; /* 6% of the viewport's width */
-            height: auto; /* Maintain aspect ratio */
-            z-index: 100; /* Ensure it's above other elements */
-        }
-
-        .image-container {
-            display: flex;
-            flex-wrap: nowrap;
-            /* Allows images to wrap on small screens */
-            justify-content: center;
-            max-width: 100%;
-        }
-
-        .image-container img {
-            flex: 1;
-            /* Allow images to grow and shrink as needed */
-            max-width: 45%;
-            /* Each image can take up to 45% of the container width */
-            object-fit: contain;
-            /* Makes the image scale to fit the content box */
-            height: auto;
-            /* Maintain aspect ratio */
-            margin: 0 2.5%;
-            /* Spacing between images */
-        }
-
-        /* Responsive Images: If the screen is too small, each image takes full width */
-        @media (max-width: 300px) {
-            .image-container img {
+            .image-container {
+                display: flex;
+                flex-wrap: nowrap;
+                justify-content: center;
                 max-width: 100%;
             }
-        }
-    </style>
-</head>
 
-<body>
-    <a href="https://cosmonaut.co.nz">
-        <img class="home-icon" src="img/rocket_home_trans.png" alt="Fly home">
-    </a>
-    <div class="image-container">
-        <img src="img/lost_cosmonaut.png" alt="Lost">
-        <img src="img/cosmonaut_logo_trans.png" alt="we are cosmonaut">
-    </div>
-</body>
+            .image-container img {
+                flex: 1;
+                max-width: 35%;
+                object-fit: contain;
+                height: auto;
+                margin: 0 2.5%;
+            }
 
+            footer {
+                text-align: center;
+                font-size: 10px;
+                color: #666;
+                padding: 20px 0;
+                position: fixed;
+                left: 0;
+                bottom: 0;
+                width: 100%;
+                background-color: rgba(255, 255, 255, 0.9);
+                font-family: monospace;
+            }
+
+            @media (max-width: 300px) {
+                .image-container img {
+                    max-width: 100%;
+                }
+
+                footer {
+                    font-size: 8px;
+                }
+            }
+        </style>
+    </head>
+
+    <body>
+        <a href="https://cosmonaut.co.nz">
+            <img class="home-icon" src="img/rocket_home_trans.png" alt="Fly home" />
+        </a>
+        <div class="image-container">
+            <img src="img/lost_cosmonaut.png" alt="Lost" />
+            <img src="img/cosmonaut_logo_trans.png" alt=">_ we are cosmonaut" />
+        </div>
+    </body>
+    <footer>>_ &copy; 2024 cosmonaut limited. all rights reserved.</footer>
 </html>
